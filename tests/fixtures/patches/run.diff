@@ -1,0 +1,8 @@
+diff --git a/pkg/core.py b/pkg/core.py
+--- a/pkg/core.py
++++ b/pkg/core.py
+@@ -8,3 +8,3 @@ class Thing:
+     def run(self, x):
+-        return helper(x) + self.other()
++        return helper(x) - self.other()
+ 

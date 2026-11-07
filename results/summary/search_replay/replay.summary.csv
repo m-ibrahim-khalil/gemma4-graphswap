@@ -1,0 +1,8 @@
+# overlap = |topA & topB| / min(k, n_nodes - 1) over embedding-path calls (n_resolved); unit=call counts every call, unit=query the first call per (run, instance_id, query); observed_*_embed: embedding-path calls whose recorded result list set A / B reproduces
+run,unit,n_calls,n_resolved,n_substring,mean_overlap,frac_top1_same,frac_same_list,unresolved_changed,n_observed_embed,observed_a_embed,observed_b_embed,n_observed_lexical,observed_lexical
+A_C1_1234,call,122,75,14,0.15119999999999997,0.08,0.04,0,61,60,3,43,43
+A_C1_4321,call,137,85,24,0.12623529411764706,0.11764705882352941,0.03529411764705882,0,74,71,2,47,47
+A_C2_1234,call,107,69,13,0.14637681159420288,0.08695652173913043,0.043478260869565216,0,58,1,56,33,33
+A_C2_4321,call,96,59,17,0.15830508474576271,0.13559322033898305,0.05084745762711865,0,51,1,47,34,34
+B_C1_1234,call,248,152,34,0.12078947368421047,0.09210526315789473,0.013157894736842105,0,134,126,2,85,85
+B_C1_4321,call,282,176,34,0.11920454545454548,0.06818181818181818,0.017045454545454544,0,157,146,3,96,96

@@ -1,0 +1,40 @@
+[project]
+name = "graphswap"
+version = "0.1.0"
+description = "Graph resolution study for code-graph retrieval"
+license = "Apache-2.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "networkx>=3.0",
+    "numpy>=1.26",
+    "sentence-transformers>=6.2.0",
+    "torch>=2.14.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "cachetools",
+    "matplotlib>=3.11.2",
+    "pandas>=3.1.0",
+    "jupyter>=1.1.1",
+    "nbformat>=5.11.1",
+    "nbconvert>=7.17.2",
+]
+
+[project.scripts]
+graphswap = "graphswap.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["graphswap"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "network: needs network access (set GRAPHSWAP_NETWORK=1 to run)",
+    "workspace: reads the real harness results directory (skipped when absent)",
+]

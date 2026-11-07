@@ -1,0 +1,5 @@
+diff --git a/pkg/core.py b/pkg/core.py
+--- a/pkg/core.py
++++ b/pkg/core.py
+@@ -8,0 +9,1 @@ class Thing:
++        x = x + 0

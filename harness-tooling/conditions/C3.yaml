@@ -1,0 +1,6 @@
+# C3 -- graphs rebuilt from source and their nodes embedded with Qwen3-Embedding-0.6B
+# (1024-d; bundle rebuilt_full).
+analyzer_tools: [search_similar_code, get_code_neighbors, get_code_subgraph, read_file]
+graph_bundle: rebuilt_full
+embeddings_bundle: rebuilt_full
+free_text_embed: false

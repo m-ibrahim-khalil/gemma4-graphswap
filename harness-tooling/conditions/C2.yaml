@@ -1,0 +1,6 @@
+# C2 -- released graphs; node embeddings recomputed with Qwen3-Embedding-0.6B
+# (1024-d) over the released node texts (bundle emb_released_nodes).
+analyzer_tools: [search_similar_code, get_code_neighbors, get_code_subgraph, read_file]
+graph_bundle: released
+embeddings_bundle: emb_released_nodes
+free_text_embed: false

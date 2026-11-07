@@ -1,0 +1,6 @@
+# C4 -- C3 plus free-text search: a search_similar_code query that is not a node
+# name is embedded with the same encoder instead of falling back to lexical match.
+analyzer_tools: [search_similar_code, get_code_neighbors, get_code_subgraph, read_file]
+graph_bundle: rebuilt_full
+embeddings_bundle: rebuilt_full
+free_text_embed: true

@@ -1,0 +1,7 @@
+diff --git a/pkg/new.py b/pkg/new.py
+new file mode 100644
+--- /dev/null
++++ b/pkg/new.py
+@@ -0,0 +1,2 @@
++def f():
++    return 1

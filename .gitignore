@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/
+repos/
+bundles/
+cache/
+vendor/
+results/*.jsonl
+results/traces/
+notebooks/.ipynb_checkpoints/
+.superpowers/
+# worktree symlinks to the main checkout (dir-only patterns above do not match symlinks)
+/vendor
+/bundles
+/data
+
+# Claude Code personal settings
+.claude/settings.local.json

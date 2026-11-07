@@ -1,0 +1,7 @@
+# C0 -- no code graph. The analyzer finds code with run_command (grep/find) and
+# read_file. Graph and embeddings dirs are empty, so the harness never offers the
+# graph tools.
+analyzer_tools: [read_file, run_command]
+graph_bundle: none
+embeddings_bundle: none
+free_text_embed: false

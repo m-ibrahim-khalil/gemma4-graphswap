@@ -1,0 +1,7 @@
+{
+ "run": "fixture",
+ "condition": "graph",
+ "seed": 7,
+ "resolved": 1,
+ "tasks_completed": 2
+}

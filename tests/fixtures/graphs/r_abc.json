@@ -1,0 +1,13 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {"repo_name": "r_abc"},
+  "nodes": [
+    {"id": "toyshop.gadgets.Sprocket", "name": "toyshop.gadgets.Sprocket", "text": "class Sprocket:\n    teeth = 12\n"},
+    {"id": "toyshop.gadgets.Sprocket.whirl", "name": "toyshop.gadgets.Sprocket.whirl", "text": "def whirl(self):\n    return self.teeth\n"},
+    {"id": "toyshop.helpers.tidy_up", "name": "toyshop.helpers.tidy_up", "text": "def tidy_up(x):\n    return x\n"}
+  ],
+  "edges": [
+    {"type": "calls", "source": "toyshop.gadgets.Sprocket.whirl", "target": "toyshop.helpers.tidy_up", "key": 0}
+  ]
+}
